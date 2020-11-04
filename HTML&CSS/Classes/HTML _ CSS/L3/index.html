@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex-box {
+      display: flex;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .main-btn {
+      margin-top: 50px;
+      position: relative;
+      background-color: white;
+      transition: background-color 4s ease;
+    }
+
+    /* .main-btn::before {
+      content: " ";
+      display: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: black;
+    } */
+
+    .main-btn:hover {
+      background-color: aqua;
+      animation: zoomIn 2s ease-in-out;
+      transform: scale(1.1);
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* .main-btn:hover::before {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+      content: " ";
+      width: 10px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: black;
+    } */
+
+    a:visited {
+      color: red;
+    }
+    
+    input:focus {
+      background-color: gray;
+    }
+
+    .my-div:hover button {
+      background-color: aqua;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="flex-box">
+    <div style="border: 1px solid black;">
+      <div>Lorem ipsum dolor sit</div>
+      <div>Lorem ipsum dolor sit</div>
+    </div>
+    <div style="border: 1px solid black;">Lorem ipsum dolor sit</div>
+    <span style="border: 1px solid black;">Lorem ipsum dolor sit</span>
+  </div>
+  <button class="main-btn">Click Me</button>
+  <!-- <a href="https://google.com">Google</a>
+  <input type="text" /> -->
+  
+</body>
+
+</html>
