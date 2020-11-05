@@ -10,8 +10,6 @@ function isBiggerThan(chair) {
   if (chair = 4) {
     console.log("The number 4 is equal to 4");
   }
-
-
 }
 isBiggerThan();
 // Do not remove or change this line, or the tests won't work
